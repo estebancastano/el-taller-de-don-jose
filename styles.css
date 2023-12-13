@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+section {
+    height: 500px; /* Altura de ejemplo para las secciones */
+    margin-top: 10px;
+}
+
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s  ease-in;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 14px; /* Tamaño de texto para pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 12px; /* Tamaño de texto para pantallas pequeñas */
+    }
+}
