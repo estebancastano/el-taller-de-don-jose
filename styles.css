@@ -21,7 +21,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 40px 20px;
 }
 
 section {
@@ -56,10 +56,36 @@ img{
     }
 }
 
-footer{
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     text-align: center;
-    background-color: #333;
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
     padding: 15px;
+}
+
+.material-symbols-outlined {
+    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+    margin-right: 5px;
+    margin-left: 30px; /* Ajusta el espacio entre el icono y el texto en vista de escritorio */
+    margin-bottom: 5px; 
+    color: white;
+}
+
+.info-contacto {
+    margin-right: 10%; /* Elimina el margen predeterminado de los párrafos */
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: left;
+    }
+    .material-symbols-outlined {
+        margin-bottom: 5px; /* Ajusta el espacio entre el icono y el texto en dispositivos móviles */
+        margin-right: 0;
+    }
 }
 
 footer p{
